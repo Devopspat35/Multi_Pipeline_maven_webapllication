@@ -29,29 +29,6 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 
-    <properties>
-		<jdk.version>1.8</jdk.version>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<nexus.host.url>http://18.218.151.200:8181/Devopspat35</nexus.host.url> 
-		<nexus.login>nexuspat35</nexus.login>
-		<nexus.password>67857458Foncha</nexus.password> 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
-          <properties>
-		<jdk.version>1.8</jdk.version>
-		<spring.version>5.1.2.RELEASE</spring.version>
-		<junit.version>4.11</junit.version>
-		<log4j.version>1.2.17</log4j.version>
-		<tomcat.host.url>http://http://3.141.85.119:8088/</tomcat.host.url> 
-		<tomcat.login>Devopspat35</tomcat.login>
-		<tomcat.password>tomcatpat</tomcat.password> 
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-	</properties>
-
 	<dependencies>
 		
 		<dependency>
