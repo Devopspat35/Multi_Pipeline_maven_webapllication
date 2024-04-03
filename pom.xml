@@ -129,13 +129,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark ThinkwithTech Releases Nexus Repository</name>
-	      <url>http://3.144.149.16:8181/Devopspat35/repository/ThinkwithTechreleases/</url>
+	      <url>http://18.218.151.200:8181/Devopspat35/repository/ThinkwithTechreleases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark ThinkwithTech Snapshot Nexus Repository </name>
-	      <url>http://3.144.149.16:8181/Devopspat35/repository/ThinkwithTechsnapshots/</url>
+	      <url>http://http://18.218.151.200:8181/Devopspat35/repository/ThinkwithTechsnapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
