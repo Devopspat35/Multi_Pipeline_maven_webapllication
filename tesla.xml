@@ -95,13 +95,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://18.216.93.143:8082/Devopspat35/repository/tesla1releases/</url>
+	      <url>http://18.216.93.143:8082/Devopspat35/repository/mypaypalreleases/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.216.93.143:8082/Devopspat35/repository/tesla1snapshots/</url>
+	      <url>http://18.216.93.143:8082/Devopspat35/repository/maven-snapshots/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
