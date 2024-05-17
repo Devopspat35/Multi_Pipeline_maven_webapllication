@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>TwTechWApp</finalName>
+		<finalName>TeslaWApp</finalName>
 		
 		<plugins>
 			<plugin>
