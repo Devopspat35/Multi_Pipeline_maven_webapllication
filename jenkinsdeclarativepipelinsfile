@@ -44,6 +44,26 @@ deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'ht
 deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.223.149.41:3535/')], contextPath: null, war: 'target/*war'
       }
     }
-   }
-}
+  }
+    post{
+        always{
+       emailext body: '''Hi Team.
+
+      Build sutus 
+      Pat.a.foncha''', recipientProviders: [buildUser(), contributor(), developers(), upstreamDevelopers()], subject: 'Build status', to: 'patemf2021@yahoo.com'     
+        }
+        success{
+           emailext body: '''Hi Team.
+
+        Build succeeded
+      Pat.a.foncha''', recipientProviders: [buildUser(), contributor(), developers(), upstreamDevelopers()], subject: 'Build status', to: 'patemf2021@yahoo.com' 
+        }
+        failure{
+            emailext body: '''Hi Team.
+
+        Build failed
+       Pat.a.foncha''', recipientProviders: [buildUser(), contributor(), developers(), upstreamDevelopers()], subject: 'Build status', to: 'patemf2021@yahoo.com'
+        }
+     }
+  }
 
