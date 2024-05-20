@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>teslaApp</finalName>
+		<finalName>FonhaWebApp</finalName>
 		
 		<plugins>
 			<plugin>
