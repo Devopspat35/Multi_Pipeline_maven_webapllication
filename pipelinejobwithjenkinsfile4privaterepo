@@ -1,0 +1,39 @@
+node{
+  def mavenHome = tool name: 'maven3.9.6'   
+  stage('1.clonecode'){
+     git credentialsId: 'gitcredentials', url: 'https://github.com/Devopspat35/muliti_pipeline_web_application.git'
+  }
+stage('2mavenBuild'){
+    sh "/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven3.9.6/bin/mvn package"
+}
+stage('3.CodeQuality'){
+ sh "${mavenHome}/bin/mvn sonar:sonar"  
+}
+stage('4.UploadArtifacts'){
+    sh "${mavenHome}/bin/mvn deploy"
+}
+stage('5.Deploy2UAT'){
+   deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://3.19.26.69:3535/')], contextPath: null, war: 'target/*war' 
+}
+stage('6.ManualApproval'){
+    sh " echo 'Please review & approve' "
+    timeout(time:300, unit:'MINUTES')
+    {
+      input message: 'Application ready for deployment, Please review and approve'
+    }       
+  }
+stage('7.Deploy2Prod'){
+  deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://3.19.26.69:3535/')], contextPath: null, war: 'target/*war'
+}
+stage('8.apm'){
+   sh "echo 'monitoring , observing and alerting' " 
+   sh "echo 'application performance Monitoring in progress' "
+}
+stage( '9.notification'){
+    sh "echo create an email notification to resolve amy issues that may arise"
+    emailext body: '''The build and deployment status for TwTechwebapp
+
+Regards
+Pat. A. Foncha''', recipientProviders: [developers(), upstreamDevelopers(), buildUser()], subject: 'Job status', to: 'patemf2021@yahoo.com'
+}
+}
