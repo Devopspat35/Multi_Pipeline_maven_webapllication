@@ -28,7 +28,7 @@ pipeline{
          stage('5.Deploy2UAT'){
       steps{
         sh "echo Deployment is ready for the client review"
-deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.223.149.41:3535/')], contextPath: null, war: 'target/*war'
+deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.118.193.114:3535/')], contextPath: null, war: 'target/*war'
         }
      }
      stage('6.ManualApproval'){
@@ -41,7 +41,7 @@ deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'ht
      }
     stage('7.Deploy2Prod'){
       steps{
-deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.223.149.41:3535/')], contextPath: null, war: 'target/*war'
+deploy adapters: [tomcat9(credentialsId: 'tomcatcredentials', path: '', url: 'http://18.118.193.114:3535/')], contextPath: null, war: 'target/*war'
       }
     }
   }
