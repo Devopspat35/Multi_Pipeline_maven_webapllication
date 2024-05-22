@@ -4,18 +4,21 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>LandmarkTechnologies- Home Page</title>
-<link href="images/mylandmarklogo.png" rel="icon">
+<title>TwTTech- Home Page</title>
 </head>
 </head>
 <body>
-<h1 align="center">Welcome to Tesla Web application Project.</h1>
-<h1 align="center">We are developing and supporting quality Software Solutions to millions of clients globally.
-	           We are raising billionaires IT professionals accross the nations of the World.
-	We offer Training for DevOps with Linux, Kubernetes and Cloud, equipping IT Engineers for best performance.
-        Landmark Technologies, the Pride of Africa.
-	Class36 DevOps MasterClass will start on April 13, 2024.
-        Please invite all your contacts and friends for this life changing course.
+<h1 align="center">Welcome to ThinkwTech Web application Project.</h1>
+<h1 align="center">The new visionary Billionaire Deployment for DevOps and Cloud Engineering.
+	         ThinkwithTech Pipeline web Project.
+          The new vision Billionaire deployment DevOps and Cloud Engineering. 
+                The place to be and the place to belong. 
+         Your visits, comments and general feedback is appreciated.
+        AI and Machine learning is also in our hearts
+                 copyright: TwTech
+                Author:  Devopspat35 
+                 email  : patemf2021@yahoo.com 
+
 </h1>
 <hr>
 <br>
@@ -35,23 +38,23 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 <hr>
 <div style="text-align: center;">
 	<span>
-		<img src="images/mylandmarklogo.png" alt="" width="150">
+
 	</span>
 	<span style="font-weight: bold;">
-                Landmark Technology, 
-		Toronto, Canada
-		+1 437 215 2483,
-		mylandmarktech@gmail.com
+                    TwTech, 
+		Columbus, USA
+		+1 508 762 7158,
+		patpaddy38@gmail.com
 		<br>
-		<a href="mailto:mylandmarktech@gmail.com">Mail to Landmark Technologies</a>
+		<a href="mailto:patpaddy38@gmail.com">Mail to TwTech</a>
 	</span>
 </div>
 <hr>
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p align=center> Landmark Technologies - Consultant, Training and Software Development</p>
-<p align=center><small>Copyrights 2021 by <a href="http://mylandmarktech.com/">Landmark Technologies</a> </small></p>
+<p align=center> TwTech - Consultantancy, Training and Software Development in Multi-Fintech companies around the globe</p>
+<p align=center><small>Copyrights 2024 by <a href="https://github.com/Devopspat35">TwTech</a> </small></p>
 
 </body>
 </html>
