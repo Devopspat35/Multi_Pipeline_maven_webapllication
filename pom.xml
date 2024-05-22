@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>FonhaWebApp</finalName>
+		<finalName>patpatWebApp</finalName>
 		
 		<plugins>
 			<plugin>
