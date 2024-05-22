@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>patpatWebApp</finalName>
+		<finalName>AtemWebApp</finalName>
 		
 		<plugins>
 			<plugin>
