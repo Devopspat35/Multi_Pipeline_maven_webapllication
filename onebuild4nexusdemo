@@ -1,0 +1,9 @@
+node{
+    def mavenHome = tool name: 'maven3.9.6'
+stage('2mavenBuild'){
+    sh "${mavenHome}/bin/mvn clean package"
+}
+stage('4.UploadArtifacts'){
+    sh "${mavenHome}/bin/mvn deploy"
+   }
+ }
